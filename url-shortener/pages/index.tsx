@@ -30,9 +30,9 @@ const Home: NextPage = () => {
           <a href={shortUrl}>{shortUrl}</a>
         </div>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form aria-label="form" onSubmit={handleSubmit}>
           <input value={value} onChange={(e) => setValue(e.target.value)} />
-          <button type="submit">Shorten</button>
+          <button type="submit" id="shorten">Shorten</button>
         </form>
       )}
     </div>
